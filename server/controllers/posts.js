@@ -11,6 +11,15 @@ export const getPosts = async(req, res) => {
     }
 }
 
-export const createPost = (req, res) => {
-    res.send('Creation of Posts');
+export const createPost = async (req, res) => {
+    const post = req.body;
+    const newPost = new postMessage(post);
+
+    try {
+        await newPost.save();
+
+        res.status(201).json(newPost); //201 is successfully created
+    } catch (error) {
+        res.status(409).json({ERROR: error.message});
+    }
 }
