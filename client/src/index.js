@@ -1,6 +1,5 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -9,5 +8,9 @@ import App from './App';
 
 const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
-//ReactDOM.render(<Provider store={store}><App /></Provider>,document.getElementById('root')); //connects to the dev with ID of root
-createRoot(document.getElementById('root')).render(<Provider store={store}><App /></Provider>)
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+); //connects to the dev with ID of root
