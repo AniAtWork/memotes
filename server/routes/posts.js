@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.get('/', getPosts);
 router.post('/', createPost);
-router.patch('/:id', updatePost);
+router.patch('/:id', updatePost); //patch is used to update docs
 
 export default router;
