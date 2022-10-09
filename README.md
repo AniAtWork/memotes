@@ -16,8 +16,8 @@ Create an api call → Create an action → Create a new case in the reducers fo
 'body-parser' is used to send get/post requests <br>
 'cors' for cross origin requests (security) <br>
 'express' for framework and 'mongoose' for models <br>
-'nodemon' automatically resets server when changes are made
-'dotenv' to store environment variables for security purposes.
+'nodemon' automatically resets server when changes are made<br>
+'dotenv' to store environment variables for security purposes
 
 ## Client side
 'axios' to make API requests <br>
