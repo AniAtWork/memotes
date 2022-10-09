@@ -1,3 +1,6 @@
+# After forking the repo
+Be sure to create a .env file and store the port number and mongo db connection url in it.<br>
+
 # Meme Board
 If you come across this error ('react-scripts' is not recognized as an internal or external command) then type 'npm install react-scripts --save' in your terminal<br>
 
@@ -14,6 +17,7 @@ Create an api call → Create an action → Create a new case in the reducers fo
 'cors' for cross origin requests (security) <br>
 'express' for framework and 'mongoose' for models <br>
 'nodemon' automatically resets server when changes are made
+'dotenv' to store environment variables for security purposes.
 
 ## Client side
 'axios' to make API requests <br>
